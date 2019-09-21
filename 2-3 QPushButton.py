@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QApplication, QPushButton, QMainWindow
 import sys
 from PyQt5 import QtGui
 from PyQt5.QtCore import QRect
-
+from PyQt5 import QtCore
 
 class Window(QMainWindow):
     def __init__(self):
@@ -25,6 +25,10 @@ class Window(QMainWindow):
     def UiComponents(self):
         button = QPushButton("Click Me", self)
         button.setGeometry(QRect(100, 100, 111, 50))
+        button.setIcon(QtGui.QIcon("images/icon.jpg"))
+        button.setIconSize(QtCore.QSize(40, 40))
+        button.setToolTip("<h2>This is click me button<h2>") # We can use HTML tags.
+
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)

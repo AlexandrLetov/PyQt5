@@ -1,1 +1,1 @@
-PyQt5
+Just my try to study PyQt5 from [here](https://www.youtube.com/playlist?list=PL1FgJUcJJ03uO70zDLDF3oaTu6s2QLOPa)
