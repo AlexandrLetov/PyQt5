@@ -35,7 +35,6 @@ class Window(QMainWindow):
     def Click_Me(self):
         sys.exit()
 
-
 App = QApplication(sys.argv)
 window = Window()
 sys.exit(App.exec())
